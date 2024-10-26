@@ -1,0 +1,137 @@
+{
+  "var": {
+    "tel": "+420775473171",
+    "email": "bohromstehovani@gmail.com",
+    "companyCaps": "BOHROM"
+  },
+  "site-title": "Bohrom - Transportation in the Liberec Region and Czech Republic",
+  "nav": {
+    "links": {
+      "about": "#about",
+      "services": "#our-services",
+      "tarifs": "#tarifs",
+      "contacts": "#contacts",
+      "start": "#start"
+    }
+  },
+  "footer": {
+    "altLogo": "Bohrom Company Logo",
+    "navigation": "Navigation",
+    "aboutUs": "About Us",
+    "services": "Services",
+    "tarifs": "Prices",
+    "contacts": "Contacts",
+    "email": "Email",
+    "phone": "Phone"
+  },
+  "hiro": {
+    "h1": "Professional Transportation for Your Comfort",
+    "p": "Safe transportation of furniture and cargo throughout the Czech Republic",
+    "buttonText": "Order Delivery",
+    "giveNumber": "Write your phone number",
+    "wellCallYou": "And our specialist will contact you and answer all your questions."
+  },
+  "about": {
+    "p1": " — is a team of professionals who will help you carry out any move quickly, safely, and at an affordable price.",
+    "p2": "We operate in the Liberec region and throughout the Czech Republic. Our fleet is equipped with modern vehicles that allow us to efficiently transport various types of cargo, ensuring their safety during transportation.",
+    "p3": "We specialize in residential and office relocations and cargo transportation, using modern equipment and reliable transport.",
+    "p4": "We have modern technologies and guarantee safe transportation with insurance.",
+    "p5": "We are available 24 hours a day, 7 days a week to meet your needs at any convenient time."
+  },
+  "tariffs": {
+    "title": "Tariffs",
+    "p": "We are available 24/7 to meet your needs at any convenient time.",
+    "vehicle": "Transport vehicle",
+    "loader1": "1 loader",
+    "loader2": "2 loaders",
+    "loader3": "3 loaders",
+    "kmRate": "Transport vehicle per km",
+    "price1": "700 Kč/hour",
+    "price2": "800 Kč/hour",
+    "price3": "950 Kč/hour",
+    "price4": "1200 Kč/hour",
+    "price5": "17 Kč/km"
+  },
+  "ourServices": {
+    "title1": "Our",
+    "title2": "Services",
+    "heading_1": "Residential and Office Relocations",
+    "paragraph_1": "Professional relocation of your home or office with attention to detail and safety.",
+
+    "heading_2": "Furniture Disassembly",
+    "paragraph_2": "Disassembly and packing of furniture for convenient transportation and subsequent assembly.",
+
+    "heading_3": "Cargo Transportation",
+    "paragraph_3": "Efficient transportation of various types of cargo, including heavy and oversized items.",
+
+    "heading_4": "Disposal of Unwanted Furniture and Construction Waste",
+    "paragraph_4": "Organizing the disposal of old furniture and the recycling of construction waste to maintain cleanliness at your site.",
+
+    "heading_5": "Delivery of Furniture and Goods from Stores",
+    "paragraph_5": "Fast and reliable delivery of new furniture and goods from stores to your destination.",
+
+    "heading_6": "Delivery of Building Materials",
+    "paragraph_6": "Transportation of building materials for your repairs or construction."
+  },
+  "whyUs": {
+    "titlePart1": "Why",
+    "titlePart2": "Choose Us",
+    "alt1": "Residential and Office Relocations",
+    "alt2": "Competitive Prices",
+    "alt3": "Excellent Customer Service",
+
+    "reason1": {
+      "title": "Residential and Office Relocations",
+      "description": "Professional relocation of your home or office with attention to detail and safety."
+    },
+
+    "reason2": {
+      "title": "Competitive Prices",
+      "description": "Affordable rates and quality service."
+    },
+
+    "reason3": {
+      "title": "Excellent Customer Service",
+      "description": "Our team is always ready to assist you at any time, resolving any questions or issues."
+    }
+  },
+  "ourTeam": {
+    "title": "Our",
+    "subtitle": "Team in Action",
+    "alt1": "Relocation in Czech Republic",
+    "alt2": "Professional Relocation Liberec Region",
+    "alt3": "Cargo Transportation in Czech Republic",
+    "alt4": "Office Relocations",
+    "alt5": "Residential Relocations",
+    "alt6": "Reliable Transport for Transportation",
+    "alt7": "Safe Cargo Relocation",
+    "alt8": "Relocation with Professionals"
+  },
+  "contactForm": {
+    "successTitle": "Submitted!",
+    "successDescription": "We will contact you as soon as possible.",
+    "getFeedback": "Get feedback",
+    "nameLabel": "Name:",
+    "emailLabel": "Email:",
+    "phoneLabel": "Phone:",
+    "messageLabel": "Comment (if needed):",
+    "namePlaceholder": "Peter",
+    "emailPlaceholder": "email@email.com",
+    "phonePlaceholder": "+420 000 000 000",
+    "messagePlaceholder": "Comment (if needed):",
+    "submitButton": "Send",
+    "infoText": "By clicking the button, you consent to the processing of personal data and agree to the ",
+    "confid": "privacy policy",
+    "loadingMessage": "Sending message...",
+    "successMessage": "Message sent successfully",
+    "errorMessage": "An error occurred while sending the message. Please try again.",
+    "limitExceeded": "Too many attempts. Please try again later."
+  },
+  "workingHours": "Working Hours",
+  "workingHoursText": "We operate 24/7 without breaks",
+  "workingHours24": "24/7",
+  "errors": {
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address"
+  }
+}

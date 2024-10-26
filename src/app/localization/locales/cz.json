@@ -1,0 +1,131 @@
+{
+  "var": {
+    "tel": "+420775473171",
+    "email": "bohromstehovani@gmail.com",
+    "companyCaps": "BOHROM"
+  },
+  "site-title": "Bohrom - Doprava v Libereckém kraji a ČR",
+  "nav": {
+    "links": {
+      "about": "#about",
+      "services": "#our-services",
+      "tarifs": "#tarifs",
+      "contacts": "#contacts",
+      "start": "#start"
+    }
+  },
+  "footer": {
+    "altLogo": "Logo společnosti Bohrom",
+    "navigation": "Navigace",
+    "aboutUs": "O nás",
+    "services": "Služby",
+    "tarifs": "Ceny",
+    "contacts": "Kontakty",
+    "email": "E-mail",
+    "phone": "Telefon"
+  },
+  "hiro": {
+    "h1": "Profesionální doprava pro vaše pohodlí",
+    "p": "Bezpečná přeprava nábytku a nákladu po celé ČR",
+    "buttonText": "Poptávka",
+    "giveNumber": "Zanechte své číslo",
+    "wellCallYou": "A náš specialista se s  vámi spojí a zodpoví všechny Vaše dotazy."
+  },
+  "about": {
+    "p1": " — tým profesionálů, kteří Vám pomohou s kompletním průběhem vašeho stěhování rychle, bezpečně a za dostupnou cenu.",
+    "p2": "Pracujeme v Libereckém kraji a po celé ČR. Náš vozový park je vybaven moderním vybavením, které nám umožňuje kvalitně přepravovat různé druhy nákladů a zajistit jejich bezpečnost při přepravě.",
+    "p3": "Specializujeme se především na stěhování a vyklízení bytů domů a kanceláří.",
+    "p4": "Disponujeme moderní technikou a zaručujeme bezpečnou dopravu s pojištěním.",
+    "p5": "Jsme Vám k dispozici 24 hodin denně 7 dní v týdnu."
+  },
+  "tariffs": {
+    "title": "Tarify",
+    "p": "Jsme k dispozici 24 hodin denně, 7 dní v týdnu, abychom kdykoli vyhověli vašim potřebám",
+    "vehicle": "Vozidlo (dodávka)",
+    "loader1": "1 stehovák",
+    "loader2": "2 stěhovací",
+    "loader3": "3 stěhovací",
+    "kmRate": "Auto na km",
+    "price1": "700 korun/hodina",
+    "price2": "800 korun/hodina",
+    "price3": "950 korun/hodina",
+    "price4": "1200 korun/hodina",
+    "price5": "17 korun/km"
+  },
+  "ourServices": {
+    "title1": "Naše",
+    "title2": "Služby",
+    "heading_1": "Stěhování a vyklízení bytů, domů a kanceláři",
+    "paragraph_1": "Profesionální stěhování vašeho domova nebo kanceláře s důrazem na detail a bezpečnost.",
+    "heading_2": "Demontáž nábytku",
+    "paragraph_2": "Demontáž a balení nábytku pro pohodlnou přepravu a následnou montáž.",
+    "heading_3": "Nákladní doprava",
+    "paragraph_3": "Efektivní přeprava různých druhů nákladu, včetně těžkých a neskladných předmětů.",
+    "heading_4": "Vyklízení nepotřebného nábytku a stavebního odpadu",
+    "paragraph_4": "Organizace odvozu starého nábytku a recyklace stavebního odpadu.",
+    "heading_5": "Přeprava nábytku a zboží z obchodů",
+    "paragraph_5": "Rychlé a spolehlivé dodání nového nábytku a zboží z prodejen na místo určení.",
+    "heading_6": "Doprava stavebních materiálů",
+    "paragraph_6": "Doprava stavebních materiálů pro vaši rekonstrukci nebo stavbu."
+  },
+  "whyUs": {
+    "titlePart1": "Proč",
+    "titlePart2": "si nás vybrat",
+    "alt1": "Stěhování bytů domů a kanceláře",
+    "alt2": "Konkurenční ceny",
+    "alt3": "Skvělý zákaznický servis",
+
+    "reason1": {
+      "title": "Stěhování bytů domů a kanceláři",
+      "description": "Profesionální stěhování vašeho domova nebo kanceláře s důrazem na detail a bezpečnost."
+    },
+    "reason2": {
+      "title": "Konkurenční ceny",
+      "description": "Dostupné ceny a kvalitní služby."
+    },
+
+    "reason3": {
+      "title": "Skvělý zákaznický servis",
+      "description": "Náš tým je vždy připraven vám kdykoli pomoci a vyřešit jakékoli dotazy nebo problémy."
+    }
+  },
+  "ourTeam": {
+    "title": "Náš",
+    "subtitle": "tým v akci",
+    "alt1": "Stěhování do České republiky",
+    "alt2": "Profesionální stěhování Liberecký kraj",
+    "alt3": "Nákladní doprava v České republice",
+    "alt4": "Přestěhování kanceláři",
+    "alt5": "Hnutí domácnosti",
+    "alt6": "Spolehlivá přeprava pro přepravu",
+    "alt7": "Bezpečný pohyb nákladu",
+    "alt8": "Stěhování s profesionály"
+  },
+  "contactForm": {
+    "successTitle": "Odesláno!",
+    "successDescription": "Budeme vás kontaktovat co nejdříve.",
+    "getFeedback": "Kontaktní formulář",
+    "nameLabel": "Jméno:",
+    "emailLabel": "E-mailová adresa:",
+    "phoneLabel": "Telefon:",
+    "messageLabel": "Komentář (v případě potřeby):",
+    "namePlaceholder": "Petro",
+    "emailPlaceholder": "email@email.com",
+    "phonePlaceholder": "+420 000 000 000",
+    "messagePlaceholder": "Komentář (je-li vyžadován):",
+    "submitButton": "Odeslat",
+    "infoText": "Kliknutím na tlačítko souhlasíte se zpracováním osobních údajů a souhlasíte s ",
+    "confid": "ochrana osobních údajů",
+    "loadingMessage": "Načítání zprávy...",
+    "successMessage": "Zpráva byla úspěšně odeslána",
+    "errorMessage": "Při odesílání zprávy došlo k chybě. Zkuste to prosím znovu.",
+    "limitExceeded": "Příliš mnoho pokusů. Zkuste to prosím znovu později."
+  },
+  "workingHours": "pracovní doba",
+  "workingHoursText": "Máme otevřeno 24 hodin denně, 7 dní v týdnu",
+  "workingHours24": "24/7",
+  "errors": {
+    "required": "Toto pole je povinné",
+    "invalidEmail": "Neplatná e-mailová adresa"
+  }
+}
