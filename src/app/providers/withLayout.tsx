@@ -11,7 +11,7 @@ interface WithLayoutProps {
 export default function WithLayout({ children, toggleTheme }: WithLayoutProps) {
   return (
     <div className="bg-white flex flex-col items-center w-full min-h-[100vh] overflow-hidden">
-      {/* <Header toggleTheme={toggleTheme} /> */}
+      <Header toggleTheme={toggleTheme} />
 
       <div className="flex flex-col w-full" id="start">
         {children}

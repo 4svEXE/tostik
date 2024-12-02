@@ -1,17 +1,15 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
-import SendPhoneButton from "../../components/shared/sendPhoneButton/SendPhoneButton";
 import Hiro from "./components/hiro";
 import "./index.scss";
 
-// Ліниве завантаження компонентів
-// const About = React.lazy(() => import("./components/about"));
-// const Contacts = React.lazy(() => import("./components/contacts"));
-// const OurServices = React.lazy(() => import("./components/our-services"));
-// const OurTeam = React.lazy(() => import("./components/our-team"));
-// const Tariffs = React.lazy(() => import("./components/tariffs"));
+// Динамічний імпорт компонентів з React.lazy
+const Contacts = React.lazy(() => import("./components/contacts"));
 const WhyUs = React.lazy(() => import("./components/why-choose-us"));
+const Upsale = React.lazy(() => import("./components/upsale"));
+const Recipes = React.lazy(() => import("./components/recipes"));
+const Faq = React.lazy(() => import("./components/faq"));
 
 export default function HomePage() {
   const { t } = useTranslation();
@@ -19,7 +17,7 @@ export default function HomePage() {
   return (
     <div className="w-full">
       <Helmet>
-        <title>{t("site-title")} </title>
+        <title>{t("site-title")}</title>
       </Helmet>
 
       <div id="first-screen">
@@ -31,15 +29,24 @@ export default function HomePage() {
           <div id="why-us">
             <WhyUs />
           </div>
-          {/* <div id="about"><About/></div>
-          <div id="our-services"><OurServices/></div>
-          <div id="tarifs"><Tariffs/></div>
-          <div id="our-team"><OurTeam/></div>
-          <div id="contacts"><Contacts/></div> */}
+
+          <div id="upsale">
+            <Upsale />
+          </div>
+
+          <div id="recipes">
+            <Recipes />
+          </div>
+
+          <div id="faq">
+            <Faq />
+          </div>
+
+          <div id="get-product">
+            <Contacts />
+          </div>
         </React.Suspense>
       </div>
-
-      <SendPhoneButton />
     </div>
   );
 }

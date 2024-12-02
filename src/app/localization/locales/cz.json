@@ -2,9 +2,9 @@
   "var": {
     "tel": "+420775473171",
     "email": "bohromstehovani@gmail.com",
-    "companyCaps": "BOHROM"
+    "companyCaps": "MAGIC"
   },
-  "site-title": "Bohrom - Doprava v Libereckém kraji a ČR",
+  "site-title": "Magic - бутерброднця",
   "nav": {
     "links": {
       "about": "#about",
@@ -15,117 +15,117 @@
     }
   },
   "footer": {
-    "altLogo": "Logo společnosti Bohrom",
-    "navigation": "Navigace",
-    "aboutUs": "O nás",
-    "services": "Služby",
-    "tarifs": "Ceny",
-    "contacts": "Kontakty",
-    "email": "E-mail",
-    "phone": "Telefon"
+    "altLogo": "Логотип компанії Богром",
+    "navigation": "Навігація",
+    "aboutUs": "Про нас",
+    "services": "Послуги",
+    "tarifs": "Ціни",
+    "contacts": "Контакти",
+    "email": "Електронна пошта",
+    "phone": "Телефон"
   },
   "hiro": {
-    "h1": "Profesionální doprava pro vaše pohodlí",
-    "p": "Bezpečná přeprava nábytku a nákladu po celé ČR",
-    "buttonText": "Poptávka",
-    "giveNumber": "Zanechte své číslo",
-    "wellCallYou": "A náš specialista se s  vámi spojí a zodpoví všechny Vaše dotazy."
+    "h1": "Професійний транспорт для вашого комфорту",
+    "p": "Безпечне перевезення меблів та вантажу по всій ЧР",
+    "buttonText": "Запит",
+    "giveNumber": "Залиште свій номер",
+    "wellCallYou": "І наш спеціаліст зв’яжеться з вами та відповість на всі ваші запитання."
   },
   "about": {
-    "p1": " — tým profesionálů, kteří Vám pomohou s kompletním průběhem vašeho stěhování rychle, bezpečně a za dostupnou cenu.",
-    "p2": "Pracujeme v Libereckém kraji a po celé ČR. Náš vozový park je vybaven moderním vybavením, které nám umožňuje kvalitně přepravovat různé druhy nákladů a zajistit jejich bezpečnost při přepravě.",
-    "p3": "Specializujeme se především na stěhování a vyklízení bytů domů a kanceláří.",
-    "p4": "Disponujeme moderní technikou a zaručujeme bezpečnou dopravu s pojištěním.",
-    "p5": "Jsme Vám k dispozici 24 hodin denně 7 dní v týdnu."
+    "p1": " — команда професіоналів, які допоможуть вам з усім процесом вашого переїзду швидко, безпечно та за доступною ціною.",
+    "p2": "Ми працюємо в Ліберецькому краї та по всій ЧР. Наш автопарк оснащений сучасним обладнанням, яке дозволяє якісно перевозити різні види вантажів та забезпечує їх безпеку під час транспортування.",
+    "p3": "Ми спеціалізуємося головним чином на переїздах та очищенні квартир, будинків та офісів.",
+    "p4": "Маємо сучасну техніку та гарантуємо безпечний транспорт із страховкою.",
+    "p5": "Ми до ваших послуг 24 години на добу, 7 днів на тиждень."
   },
   "tariffs": {
-    "title": "Tarify",
-    "p": "Jsme k dispozici 24 hodin denně, 7 dní v týdnu, abychom kdykoli vyhověli vašim potřebám",
-    "vehicle": "Vozidlo (dodávka)",
-    "loader1": "1 stehovák",
-    "loader2": "2 stěhovací",
-    "loader3": "3 stěhovací",
-    "kmRate": "Auto na km",
-    "price1": "700 korun/hodina",
-    "price2": "800 korun/hodina",
-    "price3": "950 korun/hodina",
-    "price4": "1200 korun/hodina",
-    "price5": "17 korun/km"
+    "title": "Тарифи",
+    "p": "Ми доступні 24 години на добу, 7 днів на тиждень, щоб задовольнити ваші потреби у будь-який час",
+    "vehicle": "Транспортний засіб (фургон)",
+    "loader1": "1 вантажник",
+    "loader2": "2 вантажники",
+    "loader3": "3 вантажники",
+    "kmRate": "Авто на км",
+    "price1": "700 крон/година",
+    "price2": "800 крон/година",
+    "price3": "950 крон/година",
+    "price4": "1200 крон/година",
+    "price5": "17 крон/км"
   },
   "ourServices": {
-    "title1": "Naše",
-    "title2": "Služby",
-    "heading_1": "Stěhování a vyklízení bytů, domů a kanceláři",
-    "paragraph_1": "Profesionální stěhování vašeho domova nebo kanceláře s důrazem na detail a bezpečnost.",
-    "heading_2": "Demontáž nábytku",
-    "paragraph_2": "Demontáž a balení nábytku pro pohodlnou přepravu a následnou montáž.",
-    "heading_3": "Nákladní doprava",
-    "paragraph_3": "Efektivní přeprava různých druhů nákladu, včetně těžkých a neskladných předmětů.",
-    "heading_4": "Vyklízení nepotřebného nábytku a stavebního odpadu",
-    "paragraph_4": "Organizace odvozu starého nábytku a recyklace stavebního odpadu.",
-    "heading_5": "Přeprava nábytku a zboží z obchodů",
-    "paragraph_5": "Rychlé a spolehlivé dodání nového nábytku a zboží z prodejen na místo určení.",
-    "heading_6": "Doprava stavebních materiálů",
-    "paragraph_6": "Doprava stavebních materiálů pro vaši rekonstrukci nebo stavbu."
+    "title1": "Наші",
+    "title2": "Послуги",
+    "heading_1": "Переїзд та очищення квартир, будинків та офісів",
+    "paragraph_1": "Професійний переїзд вашого дому або офісу з увагою до деталей і безпеки.",
+    "heading_2": "Розбирання меблів",
+    "paragraph_2": "Розбирання та пакування меблів для зручного перевезення та подальшого збирання.",
+    "heading_3": "Вантажні перевезення",
+    "paragraph_3": "Ефективне перевезення різних видів вантажу, включаючи важкі та негабаритні предмети.",
+    "heading_4": "Вивезення непотрібних меблів та будівельного сміття",
+    "paragraph_4": "Організація вивезення старих меблів та переробка будівельного сміття.",
+    "heading_5": "Доставка меблів та товарів з магазинів",
+    "paragraph_5": "Швидка та надійна доставка нових меблів та товарів з магазинів до місця призначення.",
+    "heading_6": "Перевезення будівельних матеріалів",
+    "paragraph_6": "Перевезення будівельних матеріалів для вашого ремонту або будівництва."
   },
   "whyUs": {
-    "titlePart1": "Proč",
-    "titlePart2": "si nás vybrat",
-    "alt1": "Stěhování bytů domů a kanceláře",
-    "alt2": "Konkurenční ceny",
-    "alt3": "Skvělý zákaznický servis",
+    "titlePart1": "Чому",
+    "titlePart2": "обирають нас",
+    "alt1": "Переїзд квартир, будинків та офісів",
+    "alt2": "Конкурентні ціни",
+    "alt3": "Чудовий сервіс для клієнтів",
 
     "reason1": {
-      "title": "Stěhování bytů domů a kanceláři",
-      "description": "Profesionální stěhování vašeho domova nebo kanceláře s důrazem na detail a bezpečnost."
+      "title": "Переїзд квартир, будинків та офісів",
+      "description": "Професійний переїзд вашого дому або офісу з увагою до деталей і безпеки."
     },
     "reason2": {
-      "title": "Konkurenční ceny",
-      "description": "Dostupné ceny a kvalitní služby."
+      "title": "Конкурентні ціни",
+      "description": "Доступні ціни та якісні послуги."
     },
 
     "reason3": {
-      "title": "Skvělý zákaznický servis",
-      "description": "Náš tým je vždy připraven vám kdykoli pomoci a vyřešit jakékoli dotazy nebo problémy."
+      "title": "Чудовий сервіс для клієнтів",
+      "description": "Наша команда завжди готова допомогти вам та вирішити будь-які питання або проблеми."
     }
   },
   "ourTeam": {
-    "title": "Náš",
-    "subtitle": "tým v akci",
-    "alt1": "Stěhování do České republiky",
-    "alt2": "Profesionální stěhování Liberecký kraj",
-    "alt3": "Nákladní doprava v České republice",
-    "alt4": "Přestěhování kanceláři",
-    "alt5": "Hnutí domácnosti",
-    "alt6": "Spolehlivá přeprava pro přepravu",
-    "alt7": "Bezpečný pohyb nákladu",
-    "alt8": "Stěhování s profesionály"
+    "title": "Наша",
+    "subtitle": "команда в дії",
+    "alt1": "Переїзд до Чехії",
+    "alt2": "Професійний переїзд Ліберецький край",
+    "alt3": "Вантажний транспорт в Чехії",
+    "alt4": "Переїзд офісів",
+    "alt5": "Переїзд житла",
+    "alt6": "Надійний транспорт для перевезення",
+    "alt7": "Безпечне переміщення вантажу",
+    "alt8": "Переїзд з професіоналами"
   },
   "contactForm": {
-    "successTitle": "Odesláno!",
-    "successDescription": "Budeme vás kontaktovat co nejdříve.",
-    "getFeedback": "Kontaktní formulář",
-    "nameLabel": "Jméno:",
-    "emailLabel": "E-mailová adresa:",
-    "phoneLabel": "Telefon:",
-    "messageLabel": "Komentář (v případě potřeby):",
-    "namePlaceholder": "Petro",
+    "successTitle": "Відправлено!",
+    "successDescription": "Ми зв’яжемося з вами якнайшвидше.",
+    "getFeedback": "Контактна форма",
+    "nameLabel": "Ім'я:",
+    "emailLabel": "Електронна адреса:",
+    "phoneLabel": "Телефон:",
+    "messageLabel": "Коментар (за потреби):",
+    "namePlaceholder": "Петро",
     "emailPlaceholder": "email@email.com",
     "phonePlaceholder": "+420 000 000 000",
-    "messagePlaceholder": "Komentář (je-li vyžadován):",
-    "submitButton": "Odeslat",
-    "infoText": "Kliknutím na tlačítko souhlasíte se zpracováním osobních údajů a souhlasíte s ",
-    "confid": "ochrana osobních údajů",
-    "loadingMessage": "Načítání zprávy...",
-    "successMessage": "Zpráva byla úspěšně odeslána",
-    "errorMessage": "Při odesílání zprávy došlo k chybě. Zkuste to prosím znovu.",
-    "limitExceeded": "Příliš mnoho pokusů. Zkuste to prosím znovu později."
+    "messagePlaceholder": "Коментар (за потреби):",
+    "submitButton": "Відправити",
+    "infoText": "Натискаючи кнопку, ви погоджуєтеся на обробку особистих даних і погоджуєтеся з ",
+    "confid": "політикою конфіденційності",
+    "loadingMessage": "Відправка повідомлення...",
+    "successMessage": "Повідомлення успішно відправлено",
+    "errorMessage": "Виникла помилка під час відправки повідомлення. Спробуйте ще раз.",
+    "limitExceeded": "Забагато спроб. Спробуйте ще раз пізніше."
   },
-  "workingHours": "pracovní doba",
-  "workingHoursText": "Máme otevřeno 24 hodin denně, 7 dní v týdnu",
+  "workingHours": "Графік роботи",
+  "workingHoursText": "Ми працюємо цілодобово, 7 днів на тиждень",
   "workingHours24": "24/7",
   "errors": {
-    "required": "Toto pole je povinné",
-    "invalidEmail": "Neplatná e-mailová adresa"
+    "required": "Це поле є обов'язковим",
+    "invalidEmail": "Невірна електронна адреса"
   }
 }

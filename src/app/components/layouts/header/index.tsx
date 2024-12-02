@@ -25,7 +25,7 @@ const Header: React.FC<SidebarProps> = () => {
   ];
 
   return (
-    <div className="container header-container">
+    <div className="container header-container hidden">
       <header className={`Header ${activeNav ? "active" : ""}`}>
         <a href="#start"><img src="/assets/logo-white.svg" alt="Logo" className="logo" /></a>
 

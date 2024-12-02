@@ -75,7 +75,7 @@ const ContactForm: React.FC = () => {
     if (!canSendEmail()) {
       toast.error(t("contactForm.limitExceeded"));
       actions.setSubmitting(false);
-      updateStatistic("Error: contactForm.limitExceeded")
+      updateStatistic("Error: contactForm.limitExceeded");
       return;
     }
 
@@ -93,20 +93,23 @@ const ContactForm: React.FC = () => {
         USER_ID
       );
 
-      updateStatistic("message: " + JSON.stringify({
-        from_name: values.name,
-        to_name: "BOHROM",
-        message: values.message,
-        phone: values.phone,
-        email: values.email,
-      }))
+      updateStatistic(
+        "message: " +
+          JSON.stringify({
+            from_name: values.name,
+            to_name: "BOHROM",
+            message: values.message,
+            phone: values.phone,
+            email: values.email,
+          })
+      );
       updateEmailLimit();
       actions.resetForm();
       setIsSubmitted(true);
       toast.success(t("contactForm.successMessage"));
     } catch (error) {
       toast.error(t("contactForm.errorMessage"));
-      updateStatistic("error: " + error)
+      updateStatistic("error: " + error);
     } finally {
       actions.setSubmitting(false);
     }
@@ -119,7 +122,7 @@ const ContactForm: React.FC = () => {
         containerClassName="z-100 mb-20"
         position="bottom-center"
         toastOptions={{
-          duration: 200000, 
+          duration: 200000,
         }}
       />
 
@@ -127,7 +130,11 @@ const ContactForm: React.FC = () => {
         <div className="success-message">
           <h3>{t("contactForm.successTitle")}</h3>
           <p>{t("contactForm.successDescription")}</p>
-          <img className="mt-10" src="/assets/img/why-us/3.svg" alt="Excellent Customer Service"></img>
+          <img
+            className="mt-10"
+            src="/assets/img/why-us/3.svg"
+            alt="Excellent Customer Service"
+          ></img>
         </div>
       ) : (
         <Formik
@@ -141,17 +148,17 @@ const ContactForm: React.FC = () => {
           onSubmit={onSubmit}
         >
           {(formik) => (
-            <form className="contact-form gap-10" onSubmit={formik.handleSubmit}>
-              <h3 className="mb-8">{t("contactForm.getFeedback")}</h3>
+            <form
+              className="contact-form gap-10"
+              onSubmit={formik.handleSubmit}
+            >
+              <h3 className="mb-8">
+                <mark>Замовити</mark>
+              </h3>
 
               <div className="flex flex-col">
-                <label htmlFor="name">{t("contactForm.nameLabel")}</label>
-                <Field
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder={t("contactForm.namePlaceholder")}
-                />
+                <label htmlFor="name">Ім’я</label>
+                <Field type="text" id="name" name="name" placeholder="Анна" />
                 <ErrorMessage
                   name="name"
                   component="div"
@@ -159,12 +166,12 @@ const ContactForm: React.FC = () => {
                 />
               </div>
               <div className="flex flex-col">
-                <label htmlFor="email">{t("contactForm.emailLabel")}</label>
+                <label htmlFor="email">Емайл</label>
                 <Field
                   type="email"
                   id="email"
                   name="email"
-                  placeholder={t("contactForm.emailPlaceholder")}
+                  placeholder="example@gmail.com"
                 />
                 <ErrorMessage
                   name="email"
@@ -173,12 +180,12 @@ const ContactForm: React.FC = () => {
                 />
               </div>
               <div className="flex flex-col">
-                <label htmlFor="phone">{t("contactForm.phoneLabel")}</label>
+                <label htmlFor="phone">Телефон</label>
                 <Field
                   type="text"
                   id="phone"
                   name="phone"
-                  placeholder={t("contactForm.phonePlaceholder")}
+                  placeholder="+380990123456"
                 />
                 <ErrorMessage
                   name="phone"
@@ -187,13 +194,13 @@ const ContactForm: React.FC = () => {
                 />
               </div>
               <div className="flex flex-col">
-                <label htmlFor="message">{t("contactForm.messageLabel")}</label>
+                <label htmlFor="message">Коментар (Якщо потрібно)</label>
                 <Field
                   as="textarea"
                   id="message"
                   name="message"
                   rows={4}
-                  placeholder={t("contactForm.messagePlaceholder")}
+                  placeholder="Приклад коментара"
                 />
                 <ErrorMessage
                   name="message"
@@ -203,11 +210,12 @@ const ContactForm: React.FC = () => {
               </div>
 
               <p className="info mt-2">
-                {t("contactForm.infoText")} <a href="pdf/file.pdf" target="_blank">{t("contactForm.confid")}</a>
+                Надсилаючи повідомлення ви автоматично погоджуєтесь на обробку
+                ваших даних
               </p>
 
               <Button
-                text={t("contactForm.submitButton")}
+                text="Замовити"
                 className="mt-8 w-full flex justify-center"
                 type="submit"
                 disabled={formik.isSubmitting}

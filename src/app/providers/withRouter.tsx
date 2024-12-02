@@ -8,7 +8,7 @@ interface WithRouterProps {
 export default function WithRouter({ children }: WithRouterProps) {
   return (
     // <BrowserRouter basename="/">
-    <BrowserRouter basename="/">
+    <BrowserRouter basename="/tostik/">
         {children}
     </BrowserRouter>
   );

@@ -1,5 +1,4 @@
-import React, { useEffect, useRef } from "react";
-import { useTranslation } from "react-i18next";
+import React, { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
@@ -7,11 +6,11 @@ import "./index.scss";
 import Loader from "../../../../components/shared/loader";
 
 const Hiro: React.FC = () => {
-  const { t } = useTranslation();
   const mountRef = useRef<HTMLDivElement | null>(null);
   const cameraRef = useRef<THREE.PerspectiveCamera | null>(null);
   const controlsRef = useRef<OrbitControls | null>(null);
-  const objectRef = useRef<THREE.Object3D | null>(null); // Додано для зберігання об'єкта
+  const objectRef = useRef<THREE.Object3D | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const scene = new THREE.Scene();
@@ -24,44 +23,42 @@ const Hiro: React.FC = () => {
     renderer.setClearColor(0x000000, 0);
     if (mountRef.current) mountRef.current.appendChild(renderer.domElement);
 
-    // Додаємо освітлення
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
     const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
     directionalLight.position.set(0, 5, 5);
     scene.add(ambientLight, directionalLight);
 
-    // Завантаження моделі FBX
     const loader = new FBXLoader();
-    loader.load("/img/home/hiro/grill.fbx", (object) => {
-      object.traverse((child) => {
-        if ((child as THREE.Mesh).isMesh) {
-          const mesh = child as THREE.Mesh;
-          if (mesh.material instanceof THREE.MeshStandardMaterial) {
-            // Видаляємо властивість reflectionFactor, якщо вона є
-            delete (mesh.material as any).reflectionFactor;
-            delete (mesh.material as any).map; // додатково очищуємо map для стабільності
-          }
+    loader.load("/tostik/img/home/hiro/grill.fbx", (object) => {
+      object.traverse((child: THREE.Object3D) => {
+        const mesh = child as THREE.Mesh;
+        if (
+          mesh.isMesh &&
+          mesh.material instanceof THREE.MeshStandardMaterial
+        ) {
+          delete (mesh.material as any).reflectionFactor;
+          delete (mesh.material as any).map;
         }
       });
       object.scale.set(0.05, 0.05, 0.05);
       object.position.set(0, 0, 0);
       scene.add(object);
-      objectRef.current = object; // Зберігаємо об'єкт
+      objectRef.current = object;
+
+      // Сцена завантажена, приховуємо лоадер
+      setIsLoading(false);
     });
 
-    // OrbitControls для обертання навколо осі
     const controls = new OrbitControls(camera, renderer.domElement);
-    controlsRef.current = controls;
-    controls.enableDamping = true;
-    controls.dampingFactor = 0.05;
-    controls.enableZoom = false;
+    controlsRef.current = controls as any;
+    (controls as any).enableDamping = true;
+    (controls as any).dampingFactor = 0.05;
+    (controls as any).enableZoom = false;
 
-    // Анімація
     const animate = () => {
       requestAnimationFrame(animate);
-      controls.update();
+      (controls as any).update();
 
-      // Обертання об'єкта
       if (objectRef.current) {
         objectRef.current.rotation.y -= 0.002;
       }
@@ -70,30 +67,27 @@ const Hiro: React.FC = () => {
     };
     animate();
 
-    // Блокування скролінгу
     const disableScroll = () => (document.body.style.overflow = "hidden");
     const enableScroll = () => (document.body.style.overflow = "auto");
 
-    // Обробка сенсорних подій
-    const handleTouchStart = (e: TouchEvent) => {
+    const handleTouchStart = () => {
       disableScroll();
-      controls.enableRotate = true;
+      (controls as any).enableRotate = true;
     };
 
     const handleTouchEnd = () => {
       enableScroll();
-      controls.enableRotate = true;
+      (controls as any).enableRotate = true;
     };
 
-    // Обробка миші
     const handleMouseDown = () => {
       disableScroll();
-      controls.enableRotate = true;
+      (controls as any).enableRotate = true;
     };
 
     const handleMouseUp = () => {
       enableScroll();
-      controls.enableRotate = false;
+      (controls as any).enableRotate = false;
     };
 
     mountRef.current?.addEventListener("touchstart", handleTouchStart);
@@ -109,7 +103,7 @@ const Hiro: React.FC = () => {
         mountRef.current.removeEventListener("mouseup", handleMouseUp);
         mountRef.current.removeChild(renderer.domElement);
       }
-      enableScroll(); // Відновлення скролінгу при демонтажі компонента
+      enableScroll();
     };
   }, []);
 
@@ -117,22 +111,21 @@ const Hiro: React.FC = () => {
     <section className="FirstScreen">
       <div className="container banner p-2 md:p-0 md:flex-row flex-col md:items-center m-auto gap-10">
         <div className="decoration-sircle"></div>
-
         <h1>MAGICO</h1>
 
         <div className="gallery">
-          <div className="gallery-container" ref={mountRef}>
-            <Loader />
-          </div>
+          {isLoading && <div className="loader-box"><Loader /></div>}
+          <div className="gallery-container" ref={mountRef}></div>
+
           <div className="smaller-images">
             <img src="img/home/hiro/present.svg" className="" alt="" />
           </div>
         </div>
 
-        <a href="" className="button light">
-          Замовити зараз + 
+        <a href="#get-product" className="button light">
+          Замовити зараз +
           <svg
-          className="ml-1"
+            className="ml-1"
             width="19"
             height="18"
             viewBox="0 0 19 18"
@@ -148,16 +141,19 @@ const Hiro: React.FC = () => {
       </div>
 
       <div className="info flex flex-col gap-4">
-        <h2>Готувати можна <mark>смачно</mark>, <mark>швидко</mark> та <mark>естетично</mark></h2>
+        <h2>
+          Готувати можна смачно, швидко та естетично
+        </h2>
         <p>
-          <mark><b>Сендвічниця MAGICO</b></mark> - те що треба!
+          В цьому допоможе <mark>сендвічниця MAGICO</mark>
         </p>
         <p>
-          Ці <b>рецепти</b> <mark>здивують вас</mark> і ваших близьких, особливо
-          останній.
+          Ці <b>рецепти здивують вас</b> і ваших близьких, особливо останній.
         </p>
+      </div>
 
-        <a href="" className="button">
+      <div className="w-full px-2">
+        <a href="#why-us" className="button">
           Читати далі
         </a>
       </div>
